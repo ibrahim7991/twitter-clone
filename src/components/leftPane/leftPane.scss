@@ -1,0 +1,119 @@
+
+.left-pane {
+  background: #fff;
+  color: #15202b;
+  min-height: 100vh;
+
+  .container {
+    position: fixed;
+  }
+
+  header svg {
+    height: 1.9em;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+    margin-left: 4em;
+    
+  }
+
+  nav svg {
+    height: 1.3em;
+    margin-right: 0.9em;
+    color: #15202b;
+  }
+
+  nav {
+    padding-left: 3.3em
+    
+  }
+
+  nav > *, button.more {
+    text-decoration: none;
+    color: #15202b;
+    font-size: 1.3em;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    
+
+    span {
+      display: flex;
+      align-items: center;
+      height: 2.4em;
+      width: fit-content;
+      padding: 0 0.7em;
+      color: #15202b;
+    }
+
+    &:hover span {
+      color: #15202b;
+      border-radius: 1.5em;
+      background: #EFF3F4;
+    }
+  }
+
+  nav .selected {
+    color: #1D9BF0;
+  }
+
+  button {
+    background: unset;
+    border: unset;
+  }
+
+  button.tweet {
+    display: block;
+    background: #1D9BF0;
+    color: #fff;
+    width: 14em;
+    height: 3em;
+    border-radius: 1.5em;
+    font-size: 1em;
+    margin-top: 0.5em;
+    margin-left: 3.7em;
+    cursor: pointer;
+
+    &:hover {
+      background: rgb(13, 126, 201);
+    }
+  }
+
+  footer {
+    position: fixed;
+    bottom: 1.5em;
+    margin-left: 0.5em;
+    
+    button.account {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      color: #15202b;
+      font-size: 1em;
+
+      .photo {
+        border-radius: 100%;
+        height: 2.5em;
+        width: 2.5em;
+        background: #192734;
+        margin-left: 3.5em;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 100%;
+        }
+        
+      }
+
+      .name {
+        font-weight: 700;
+      }
+
+      .username {
+        color: #cacaca;
+      }
+    }
+
+  }
+}
